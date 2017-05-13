@@ -33,12 +33,12 @@ a.dosomething();
 shape *ps = new circuit();
 ```
 
--虚函数
+- 虚函数
 ```c++
 ps->rotate();
 ```
 
--dynamic_cast 动态转换
+- dynamic_cast 动态转换
  ```c++
 if (circle *pc = dynamic_cast<circle *> (ps))
 {...}
