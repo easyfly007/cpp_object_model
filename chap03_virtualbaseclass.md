@@ -98,7 +98,7 @@ using namespace std;
 const int arrsize = 4；
 class A{
 public:
-    char[arrsize] _a;
+    char _a[arrsize];
 };
 class B: public virtual A{};
 class C: public virtual A{};
@@ -134,7 +134,7 @@ using namespace std;
 const int arrsize = 8；
 class A{
 public:
-    char[arrsize] _a;
+    char _a[arrsize];
 };
 class B: public A{};
 class C: public A{};
