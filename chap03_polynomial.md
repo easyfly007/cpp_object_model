@@ -12,16 +12,16 @@ protected:
 
 class Point3d{
 public:
-	//
+    //
 protected:
-	float _z;
+    float _z;
 };
 
 class Vertex{
 public:
     // 
 protected:
-	Vertex *next;
+    Vertex *next;
 };
 
 class Vertex3d:public Point3d, public Vertex{
@@ -63,4 +63,6 @@ p2d = &v3d;
 p3d = &v3d;
 ```
 
-```
+pv = &v3d 需要做一个转换，把 pv 转到真正的 Vertex 那部分内容开始的内存位置中去。
+而 p2d, p3d 都不需要进行内存位置的计算，因为他们都是从整个 Vertex3d 的起始位置开始的。
+
