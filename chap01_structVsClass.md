@@ -27,4 +27,22 @@ a.dosomething();
 ```
 这里a.dosomething() 就会调用B的dosomething()
 
+在C++ 中可以有三种方式实现多态：
+- 指针
+```c++
+shape *ps = new circuit();
+```
+
+-虚函数
+```c++
+ps->rotate();
+```
+
+-dynamic_cast 动态转换
+ ```c++
+if (circle *pc = dynamic_cast<circle *> (ps))
+{...}
+
+ ```
+}
 
