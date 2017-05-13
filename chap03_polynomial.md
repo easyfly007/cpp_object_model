@@ -42,15 +42,17 @@ Point3d      |
    V e r t e x  
 
 由于Vertex3d的多重继承中，Point3d是写在左边的，Vertex是写在右边的，那么
+
+对于如下的转换：
+```C++
+/*
 ---------------
 |             | |   | |- Point2
 |             | |   |--- Point3
 |             | | |----- Vertex  
 |             | |------- Vertex3d
 --------------- 
-
-对于如下的转换：
-```C++
+*/
 Vertex3d v3d;
 Vertex   *pv;
 Point2d  *p2d;
