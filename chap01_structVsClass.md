@@ -19,12 +19,12 @@ struc A 的最后一个数据成员是一个char[1]，
 
 除了　指针可以进行动态绑定之外，引用也是可以的。
 比如
-'''
+```c++
 class B:public A{};
 B b;
 A &a = b;
 a.dosomething();
-'''
+```
 这里a.dosomething() 就会调用B的dosomething()
 
 
